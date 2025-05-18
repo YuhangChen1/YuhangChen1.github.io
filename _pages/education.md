@@ -9,12 +9,12 @@ author_profile: true
 
 
 
-* Undergraduate in Computer Science, Huazhong University of Science and Technology, 2023.9 - 2027.6(expected)
+* Undergraduate in Computer Science, *Huazhong University of Science and Technology*, *2023.9 - 2027.6*(expected)
 
 
 Learning experience
 ======
-* 2024.10-NOW : ONE Lab
+* 2024.10-NOW : **ONE Lab**
 * Huazhong University of Science and Technology
 <!-- * Duties includes: Updates and improvements to template -->
 <!-- * Supervisor: The Users -->

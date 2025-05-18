@@ -226,6 +226,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  education:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -283,6 +286,14 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _education
+  - scope:
+      path: ""
+      type: education
+    values:
+      layout: single
+      author_profile: true
+      comments: true
 
 
 # Sass/SCSS

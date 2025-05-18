@@ -1,20 +1,20 @@
 ---
 layout: archive
+title: "Education"
 permalink: /education/
 author_profile: true
 ---
 
 {% include base_path %}
 
-Education
-======
+
+
 * Undergraduate in Computer Science, Huazhong University of Science and Technology, 2023.9 - 2027.6(expected)
-<!-- * M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012 -->
+
 
 Learning experience
 ======
-* 2024.10- : ONE Lab
+* 2024.10-NOW : ONE Lab
 * Huazhong University of Science and Technology
 <!-- * Duties includes: Updates and improvements to template -->
 <!-- * Supervisor: The Users -->

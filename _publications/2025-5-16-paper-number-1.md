@@ -1,7 +1,7 @@
 ---
 title: "Judge Anything: MLLM as a Judge Across Any Modality"
 collection: publications
-category: KDD 2025 Datasets and Benchmarks Track
+category: conferences
 permalink: /publication/2025-5-16-paper-number-1
 excerpt: 'We extend MLLM-as-a-Judge across multiple modalities, present TaskAnything and JudgeAnything benchmarks that reveal MLLM-as-a-Judge excel at judging MMU but struggle with MMG tasks.'
 date: 2025-5-16

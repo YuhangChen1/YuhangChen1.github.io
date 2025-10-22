@@ -11,7 +11,10 @@ author_profile: true
 
 * 2023.9 ,*Outstanding Academic Performance Scholarship*
 * 2024.9 ,*Outstanding Academic Performance Scholarship*,*Technology Innovation Scholarship*
-* 2025.5 ,*Second Prize in the Hubei Province Artificial Intelligence Practical Competition*
+* 2025.5 ,*Second Prize in the Hubei Province Artificial Intelligence Practical Competition*,
+* 2025.9 ,*Third Prize in Computer System Development Capability Competition*,
+* 2025.9 ,*Second Prize in RuiKang Robot Developer Competition*,
+* 2025.10 ,*Outstanding Academic Performance Scholarship*,*Technology Innovation Scholarship*
 
 
 <!-- Learning experience

@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am Yuhang Chen (or you can call me Francis, a name from a novel and TV series I really like, *House of Cards*).. I am a sophomore student in the [School of Computer Science and Technology](http://www.cs.hust.edu.cn/) ([Qiming College](https://qiming.hust.edu.cn/), Bachelor-Master-PhD track) at [Huazhong University of Science and Technology](https://www.hust.edu.cn/) (HUST), Wuhan, China. Currently, I am continuing to take my initial steps in scientific research. Recently, I have been particularly looking forward to conducting research on **interpretability in Deep Learning**
+Hi, I am Yuhang Chen (or you can call me Francis, a name from a novel and TV series I really like, *House of Cards*).. I am a sophomore student in the [School of Computer Science and Technology](http://www.cs.hust.edu.cn/) ([Qiming College](https://qiming.hust.edu.cn/), Bachelor-Master-PhD track) at [Huazhong University of Science and Technology](https://www.hust.edu.cn/) (HUST), Wuhan, China. Currently, I am continuing to take my initial steps in scientific research. Right now, I'm diving into interpretability in Deep Learning, though I'm still at the beginner level. My research interests lean toward generative models, HCI, and world models. **I'm incredibly eager to study in Tokyo; it's such a fantastic city.**
+
 
 I feel very fortunate to learn under the guidance of Associate Professor [Yao Wan](http://wanyao.me/) from the School of Computer Science and Technology at HUST. I am now an undergraduate researcher in [ONE Lab](https://oneslab.github.io/), which was established under the guidance of Associate Professor Yao Wan and is led by senior student [Dongping Chen](https://dongping-chen.github.io/).
 

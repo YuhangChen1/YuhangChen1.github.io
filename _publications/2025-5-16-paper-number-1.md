@@ -3,7 +3,7 @@ title: "Judge Anything: MLLM as a Judge Across Any Modality"
 collection: publications
 category: conferences
 permalink: /publication/2025-5-16-paper-number-1
-excerpt: 'We extend MLLM-as-a-Judge across multiple modalities, present TaskAnything and JudgeAnything benchmarks that reveal MLLM-as-a-Judge excel at judging MMU but struggle with MMG tasks.'
+excerpt: 'We introduce GapEval, a symmetric evaluation framework that measures the bidirectional inference consistency of Unified Multimodal Models. The findings challenge the assumption of true model integration, demonstrating that understanding and generation capabilities are often unaligned. By revealing that knowledge within these models is disjointed and unsynchronized, the research provides a critical perspective on the limitations of current "unified" architectures and calls for deeper cognitive convergence in future AI development.'
 date: 2025-5-16
 venue: 'KDD 2025 Datasets and Benchmarks Track'
 slidesurl: 'https://urrealhero.github.io/judgeanythingweb/'

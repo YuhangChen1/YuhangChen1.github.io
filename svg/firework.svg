@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title">
+  <title>Firework</title>
+  <circle cx="7" cy="6" r="2.1" fill="#ff4d6d"/>
+  <path d="M7 8.8 5.5 13h3L7 8.8Z" fill="#f59e0b"/>
+  <path d="M6.4 9.3 4.3 7.9l.8-.9 1.8 1.4-.5.9Zm1.2-.1.4-.9 2.2 1.2-.5 1-2.1-1.3Zm-.7 1.1 2.4.2-.1 1.1-2.5-.2.2-1.1Z" fill="#fbbf24"/>
+  <circle cx="16.6" cy="15.8" r="2.2" fill="#3b82f6"/>
+  <path d="M16.6 18.7 15 22h3.2l-1.6-3.3Z" fill="#f97316"/>
+  <path d="m15.8 12.1.8 1.8 1.8-.8-.7 1.9 2 .5-2 .6.7 1.9-1.8-.8-.8 1.8-.6-2-1.9.7.8-1.8-1.9-.7 2-.5-.8-1.9 1.9.8.5-2.1Z" fill="#8b5cf6"/>
+  <circle cx="19.9" cy="5.3" r="1" fill="#22c55e"/>
+  <circle cx="18.2" cy="3.8" r=".8" fill="#facc15"/>
+  <circle cx="21" cy="7.3" r=".8" fill="#ef4444"/>
+</svg>

@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <meta name="author" content="Template Author">
+    <meta
+      name="description"
+      content="A static portfolio template inspired by a modern academic homepage with an interactive hero."
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.bunny.net/css?family=abril-fatface:400|aclonica:400|akaya-kanadaka:400|almendra-sc:400"
+    >
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="myself_color.jpg"
+    >
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <canvas id="fluid-canvas" class="fluid-canvas" aria-hidden="true"></canvas>
+    <div id="page-particles" class="page-particles" aria-hidden="true"></div>
+
+    <section class="teaser-hero" aria-labelledby="teaser-title">
+      <div class="teaser-hero__inner">
+        <div id="face" class="face">
+          <div id="hero-particles" class="hero-particles" aria-hidden="true"></div>
+
+          <div class="hero-script hero-script--left" aria-hidden="true">
+            <span>「己の珠に非ざることを惧れるが故に、</span>
+            <span>敢えて刻苦して磨こうともせず、又、</span>
+            <span>己の珠なるべきを半ば信ずるが故に、</span>
+            <span>碌々として瓦に伍することも出来なかった。」</span>
+            <span>中島 敦</span>
+            <span>『山月記』</span>
+          </div>
+
+          <div class="hero-script hero-script--right" aria-hidden="true">
+            <span>Time</span>
+            <span>Travel</span>
+            <span>Movie</span>
+            <span>Dream Golden Age</span>
+            <span>Young</span>
+          </div>
+
+          <div class="hero-brush hero-brush--left" aria-hidden="true"></div>
+          <div class="hero-brush hero-brush--right" aria-hidden="true"></div>
+
+          <div id="top" class="top">
+            <div class="description">
+              <h1>Hey, There. I'm Yuhang Chen</h1>
+            </div>
+          </div>
+
+          <div id="designer" class="designer">
+            <div class="description">
+              <h1 id="teaser-title">Cinephile</h1>
+              <p class="hero-subtitle">Miss Hollywood</p>
+              <p class="hero-subtitle">Janpanese Culture and Scenery</p>
+            </div>
+          </div>
+
+
+          <div class="hero-center">
+            <div id="avatar-orb" class="avatar-orb" aria-hidden="true">
+              <div class="avatar-orb__halo"></div>
+              <img
+                id="designer-img"
+                class="avatar-orb__image avatar-orb__image--designer"
+                data-placeholder-media
+                alt="Portrait placeholder"
+              >
+              <img
+                id="coder-img"
+                class="avatar-orb__image avatar-orb__image--coder"
+                data-placeholder-media
+                alt="Portrait placeholder"
+              >
+              <div id="avatar-split" class="avatar-orb__split"></div>
+              <div class="avatar-orb__rim"></div>
+              <div class="avatar-orb__gloss"></div>
+            </div>
+          </div>
+
+          <div id="coder" class="coder">
+            <div class="description">
+              <h1>Researcher</h1>
+                            <p class="hero-subtitle">3D Spatial Reconstruction</p>
+                            <p class="hero-subtitle">Generative Model</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="teaser-hero__scroll"
+          data-scroll-target="page-content"
+        >
+          Scroll to explore
+        </button>
+      </div>
+    </section>
+
+    <div id="page-content" class="page-content">
+      <div class="page-glass">
+        <table class="layout-shell">
+          <tbody>
+            <tr>
+              <td>
+                <table class="profile-table">
+                  <tbody>
+                    <tr>
+                      <td class="profile-photo-cell">
+                        <a href="#">
+                          <img
+                            class="profile-photo hoverZoomLink"
+                            data-placeholder-media
+                            alt="Profile photo placeholder"
+                          >
+                        </a>
+                      </td>
+                      <td class="profile-copy-cell">
+                        <p class="centered">
+                          <name class="profile-name">
+                            <span>Yuhang</span>
+                            <span>Chen</span>
+                            <span class="name-cn">(陈 宇航)</span>
+                          </name>
+                        </p>
+                        <p>
+                          <span class="soft-purple-strong">Yuhang Chen</span> (or <span class="soft-purple-strong">Francis</span>,
+                          a name from a novel and TV series he really likes,
+                          <a class="inherit-link" href="https://www.netflix.com/au/title/70178217"><span class="muted-italic">House of Cards</span></a>) is an apprentice.
+              
+
+                        </p>
+                        <p>
+                          He is a Junior student in the
+                          <a class="accent-link-orange" href="http://www.cs.hust.edu.cn/">School of Computer Science and Technology</a>
+                          (<a class="accent-link-yellow" href="https://qiming.hust.edu.cn/">Qiming College</a>) at
+                          <a class="accent-link-soft-red" href="https://www.hust.edu.cn/">Huazhong University of Science and Technology</a>
+                          (HUST), Wuhan, China. He is fortunate to be guided by Associate Professor
+                          <a class="accent-link-deep-blue" href="http://wanyao.me/">Yao Wan</a>
+                          from HUST. He is a member in
+                          <a class="accent-link-deep-blue" href="https://oneslab.github.io/">ONE Lab</a>,
+                          where he met his academic mentor,
+                          <a class="accent-link-deep-blue" href="https://dongping-chen.github.io/">Dongping Chen</a>
+                          (PhD student, now at the
+                          <a class="accent-link-soft-red" href="https://umd.edu/">University of Maryland</a>).
+                        </p>
+                        <p>
+                          His research interests lie in <mark>3D spatial reconstruction and generation</mark>, multimodal foundation models and world
+                          models, 
+  
+                           He is continuing to take his initial steps
+                          in scientific research. <strong>He is always a learner.</strong>
+                        </p>
+                        <p class="profile-links">
+                          <a
+                            class="icon-link icon-link--github"
+                            href="https://github.com/YuhangChen1"
+                            aria-label="GitHub"
+                            title="GitHub"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2.18c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.35.96.1-.75.4-1.26.72-1.55-2.56-.29-5.25-1.29-5.25-5.73 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.19a10.97 10.97 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.64 1.59.24 2.77.12 3.06.74.81 1.18 1.85 1.18 3.11 0 4.45-2.69 5.43-5.26 5.72.41.36.78 1.07.78 2.16v3.21c0 .31.21.67.8.56A11.54 11.54 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"></path>
+                            </svg>
+                          </a>
+                          <a
+                            class="icon-link icon-link--linkedin"
+                            href="https://www.linkedin.com/in/yuhang-chen-54603b358/?isSelfProfile=true"
+                            aria-label="LinkedIn"
+                            title="LinkedIn"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M4.98 3.5A2.49 2.49 0 1 0 5 8.48 2.49 2.49 0 0 0 4.98 3.5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.66 4.8 6.12V21h-4v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95V21h-4V9Z"></path>
+                            </svg>
+                          </a>
+                          <a
+                            class="icon-link icon-link--x"
+                            href="https://x.com/chen940382"
+                            aria-label="X"
+                            title="X"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.89-7.41L5.58 22H2.47l7.24-8.27L1.8 2h6.4l4.42 6.72L18.9 2Zm-1.1 18h1.73L7.26 3.9H5.4L17.8 20Z"></path>
+                            </svg>
+                          </a>
+                          <a
+                            class="icon-link icon-link--xiaohongshu"
+                            href="https://www.xiaohongshu.com/user/profile/6509c5c7000000001603b71e"
+                            aria-label="Xiaohongshu"
+                            title="Xiaohongshu"
+                          >
+                            <span class="icon-mask icon-mask--xiaohongshu" aria-hidden="true"></span>
+                          </a>
+                          <a
+                            class="icon-link icon-link--orcid"
+                            href="https://orcid.org/0009-0003-7266-4842"
+                            aria-label="ORCID"
+                            title="ORCID"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span class="icon-mask icon-mask--orcid" aria-hidden="true"></span>
+                          </a>
+                          <a
+                            class="icon-link icon-link--openreview"
+                            href="https://openreview.net/profile?id=%7EYuhang_Chen9"
+                            aria-label="openreview"
+                            title="openreview"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img class="icon-raster" src="svg/openreview.png" alt="">
+                          </a>
+                          <a
+                            class="icon-link icon-link--scholar"
+                            href="https://scholar.google.com/citations?user=ECO0j8oAAAAJ"
+                            aria-label="Google Scholar"
+                            title="Google Scholar"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-6.98 8.18V15c0 2.76 3.13 5 6.98 5S19 17.76 19 15v-3.82l-7 3.82-6.98-3.82Z"></path>
+                            </svg>
+                          </a>
+                          <a
+                            class="icon-link icon-link--wechat"
+                            href="img/wechat.jpg"
+                            aria-label="WeChat"
+                            title="WeChat"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span class="icon-mask icon-mask--wechat" aria-hidden="true"></span>
+                          </a>
+                          <a
+                            class="icon-link icon-link--qq"
+                            href="img/qq.jpg"
+                            aria-label="QQ"
+                            title="QQ"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span class="icon-mask icon-mask--qq" aria-hidden="true"></span>
+                          </a>
+                          <a
+                            class="icon-link icon-link--email"
+                            href="mailto:thisiscyh@gmail.com"
+                            aria-label="Email"
+                            title="Email"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.51l9 6.23 9-6.23V7H3Zm18 10V9.93l-8.43 5.83a1 1 0 0 1-1.14 0L3 9.93V17h18Z"></path>
+                            </svg>
+                          </a>
+                          <a
+                            class="icon-link icon-link--readcv"
+                            href="cv/cv-zh.pdf"
+                            aria-label="中文简历"
+                            title="中文简历"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span class="icon-mask icon-mask--readcv" aria-hidden="true"></span>
+                          </a>
+                          <a
+                            class="icon-link icon-link--cv"
+                            href="cv/Resume_Yuhang_Chen.pdf"
+                            aria-label="CV"
+                            title="CV"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 1.5V9h5.5L13 3.5ZM8 13h8v1.8H8V13Zm0 3.5h8v1.8H8v-1.8Zm0-7h3.5v1.8H8V9.5Z"></path>
+                            </svg>
+                          </a>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>News</heading>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="section-table news-table">
+                  <tbody>
+                    <tr>
+                      <td class="news-list">
+
+                                              <div class="news-item">
+                                                <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+                                                <div>
+                                                  <b>(02/28/2026)</b> Our paper
+                                                  <span class="news-highlight-blue">GapEval</span> has been accepted to
+                                                  <span class="news-highlight-red">CVPR 2026 Findings</span>!
+                                              
+                                                </div>
+                                              </div>
+                        <div class="news-item">
+                          <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+                          <div>
+                            <b>(01/10/2026)</b> Our paper
+                            <span class="news-highlight-blue">GapEval</span> has been Preprint!
+        
+                          </div>
+                        </div>
+
+                        <div class="news-item">
+                          <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+                          <div>
+                            <b>(10/10/2025)</b> Our paper
+                            <span class="news-highlight-blue">Paper2Web</span> has been Preprint!
+                          </div>
+                        </div>
+
+    <div class="news-item">
+      <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+      <div>
+        <b>(03/25/2025)</b> Our paper
+        <span class="news-highlight-blue">Judge Everything</span> has been accepted to
+        <span class="news-highlight-red">KDD 2025 (oral)</span>!
+        </div>
+        </div>
+                        <div class="news-item">
+                          <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+                          <div>
+                            <b>(11/20/2024)</b> Our paper
+                            <span class="news-highlight-blue">Judge Everything</span> has been Preprint!
+                          </div>
+                        </div>
+
+
+                        <div class="news-item">
+                          <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+                          <div>
+                            <b>(09/01/2023)</b> <span class="news-highlight-blue">I begin my University life</span>!
+                          </div>
+                        </div>
+                        <!-- <div class="news-item">
+                          <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+                          <div>
+                            <b>(11/27/2025)</b> Glad to receive the
+                            <span class="news-highlight-blue">Australasian Undergraduate Research Medal</span>!
+                          </div>
+                        </div> -->
+                                              <!-- <div class="news-item">
+                                                <img class="news-icon" src="svg/firework-svgrepo-com.svg" alt="">
+                                                <div>
+                                                  <b>(11/27/2025)</b> Glad to receive the
+                                                  <span class="news-highlight-blue">Australasian Undergraduate Research Medal</span>!
+                                                </div>
+                                              </div>
+                      </td> -->
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>Publications</heading>
+                        <p>
+                          Selected publications are <span class="highlight">highlighted</span>.
+                          Equal contribution<sup>*</sup>.
+                          Project lead<sup>✝</sup>.
+                          Corresponding author<sup>✉</sup>.
+                        </p>
+                        <button
+                          id="toggleButton"
+                          class="toggle-btn"
+                          type="button"
+                          data-toggle-target=".extra-pubs"
+                          data-toggle-display="table-row"
+                        >
+                          Show all
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="section-table papers-table">
+                  <tbody>
+                    <tr class="paper-row is-highlighted">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>Quantifying the Gap between Understanding and Generation within Unified Multimodal Models</papertitle>
+                        <br>
+                        <span class="author-mark-wrap">Chenlong Wang<sup>*</sup></span>,
+                        <span class="author-mark-wrap"><strong>Yuhang Chen<sup>*</sup></strong></span>,
+                        <span class="author-mark-wrap">Zhihan Hu<sup>*</sup></span>,
+                         Dongping Chen,
+                        Wenhu Chen,
+                        Sarah Wiegreffe,
+                        <span class="author-mark-wrap">Tianyi Zhou<sup>✉</span></sup>
+                        <br>
+                        <div class="spacer"></div>
+                        <!-- <span class="badge">Website</span> -->
+                        <a class="badge" href="https://arxiv.org/pdf/2602.02140" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="badge" href="bib/quantifying-gap-unified-multimodal-models.bib" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                        <br>
+                        <span class="venue"><strong><em>CVPR 2026 Findings</em></strong></span><br>
+                        GapEval is a framework evaluating inference consistency in multimodal models. Results show misalignment between
+                        understanding and generation, exposing limits of “unified” architectures and calling for deeper cognitive convergence.
+
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>PAPER2WEB: LET’S MAKE YOUR PAPER ALIVE!</papertitle>
+                        <br>
+                        <strong>Yuhang Chen</strong><sup>*</sup>,
+                        Tianpeng Lv<sup>*</sup>,
+                        Siyi Zhang,
+                        Yixiang Yin,
+                        Yao Wan<sup>1✉</sup>,
+                        Philip S. Yu,
+                        Dongping Chen<sup>✝</sup>
+                        <br>
+                        <div class="spacer"></div>
+                        <a class="badge" href="https://francischen3.github.io/P2W_Website/" target="_blank" rel="noopener noreferrer">Website</a>
+                        <a class="badge" href="https://arxiv.org/pdf/2510.15842" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="badge" href="https://github.com/YuhangChen1/Paper2All" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a class="badge" href="bib/paper2web.bib" target="_blank"rel="noopener noreferrer">BibTeX</a>
+                        <br>
+                        <br>
+                        <span class="venue"><strong><em>In Submisson</em></strong></span><br>
+                        Paper2Web is the first benchmark for assessing academic webpage generation, and PWAgent, an autonomous system
+                        designed to bridge the gap between static PDFs and interactive project sites
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row is-highlighted">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>JUDGE ANYTHING: MLLM AS A JUDGE ACROSS ANY MODALITY</papertitle>
+                        <br>
+                        Shu Pu<sup>§</sup>,
+                        Yaochen Wang<sup>§</sup>,
+                        Dongping Chen<sup>✝</sup>,
+                        <strong>Yuhang Chen</strong><sup>*</sup>
+                        Guohao Wang<sup>*</sup>,
+                        Qi Qin<sup>*</sup>,
+                        Zhongyi Zhang<sup>*</sup>
+                        Zhiyuan Zhang<sup>*</sup>,
+                        Zetong Zhou<sup>*</sup>,
+                        Shuang Gong<sup>*</sup>,
+                        Yi Gui,
+                        Yao Wan<sup>✉</sup>,
+                        Philip S. Yu
+                        <br>
+                        <div class="spacer"></div>
+                        <a class="badge" href="https://urrealhero.github.io/judgeanythingweb/" target="_blank"
+                          rel="noopener noreferrer">Website</a>
+                        <a class="badge" href="https://arxiv.org/pdf/2503.17489" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="badge" href="https://github.com/URRealHero/JudgeAnything" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a class="badge" href="https://huggingface.co/datasets/pudashi/JudgeAnything" target="_blank" rel="noopener noreferrer">Data</a>
+                        <a class="badge" href="bib/judge.bib" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                        <br>
+                        <span class="venue"><strong><em>KDD 2025 oral</em></strong></span><br>
+                        We extend MLLM-as-a-Judge across multiple modalities, present TaskAnything and JudgeAnything benchmarks that reveal
+                        MLLM-as-a-Judge excel at judging MMU but struggle with MMG tasks.
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row extra-pubs">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>RobustMark: Decoupled Defenses for Resilient Image Watermarking</papertitle>
+                        <br>
+                        Collaborator E, Collaborator F, <span class="author-mark-wrap"><span class="author-mark">✝</span><strong>Template Author</strong></span>
+                        <br>
+                        <div class="spacer"></div>
+                        <span class="badge">Paper</span>
+                        <span class="badge">Project</span>
+                        <br>
+                        <span class="venue"><strong><em>CVPR 2026</em></strong></span><br>
+                        A compact example for papers where the image card acts as a static teaser.
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row extra-pubs">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>SceneVQA-3D: Grounded Question Answering Across 3D Environments</papertitle>
+                        <br>
+                        Collaborator G, <span class="author-mark-wrap"><span class="author-mark">✝</span><strong>Template Author</strong></span>, Collaborator H
+                        <br>
+                        <div class="spacer"></div>
+                        <span class="badge">Website</span>
+                        <span class="badge">Paper</span>
+                        <span class="badge">Code</span>
+                        <br>
+                        <span class="venue"><strong><em>ICLR 2026</em></strong></span><br>
+                        Use entries like this one for VLM, 3D, robotics, or multimodal work.
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row extra-pubs">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>Motion-R1: Reinforcement Learning for Motion and Reasoning</papertitle>
+                        <br>
+                        <span class="author-mark-wrap"><span class="author-mark">✝</span><strong>Template Author</strong></span>, Collaborator I, Collaborator J
+                        <br>
+                        <div class="spacer"></div>
+                        <span class="badge">Website</span>
+                        <span class="badge">Paper</span>
+                        <span class="badge">Code</span>
+                        <br>
+                        <span class="venue"><strong><em>ICLR 2026</em></strong></span><br>
+                        A generic publication summary that preserves the target site's information density.
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row extra-pubs">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>LongVideo: Structured Diffusion for Minute-Scale Generation</papertitle>
+                        <br>
+                        Collaborator K, Collaborator L, <span class="author-mark-wrap"><span class="author-mark">✝</span><strong>Template Author</strong></span>
+                        <br>
+                        <div class="spacer"></div>
+                        <span class="badge">Website</span>
+                        <span class="badge">Paper</span>
+                        <br>
+                        <span class="venue"><strong><em>Preprint</em></strong></span><br>
+                        Keep project descriptions to one or two lines so the table layout remains stable.
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row extra-pubs">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>NavReason: Structured Navigation Policies for Embodied Scenes</papertitle>
+                        <br>
+                        Collaborator M, <span class="author-mark-wrap"><span class="author-mark">✝</span><strong>Template Author</strong></span>, Collaborator N
+                        <br>
+                        <div class="spacer"></div>
+                        <span class="badge">Website</span>
+                        <span class="badge">arXiv</span>
+                        <span class="badge">Code</span>
+                        <br>
+                        <span class="venue"><strong><em>ArXiv 2025</em></strong></span><br>
+                        Another hidden publication row to exercise the foldable section behavior.
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row extra-pubs">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>Compression Priors for Efficient Multimodal Models</papertitle>
+                        <br>
+                        <span class="author-mark-wrap"><span class="author-mark">✝</span><strong>Template Author</strong></span>, Collaborator O
+                        <br>
+                        <div class="spacer"></div>
+                        <span class="badge">Paper</span>
+                        <span class="badge">Slides</span>
+                        <br>
+                        <span class="venue"><strong><em>ECCV 2024</em></strong></span><br>
+                        Short summaries make it easy to scan long publication lists without overwhelming the page.
+                      </td>
+                    </tr>
+
+                    <tr class="paper-row extra-pubs">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Paper preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>Temporal State Spaces for Long-Horizon Motion Synthesis</papertitle>
+                        <br>
+                        Collaborator P, Collaborator Q, <span class="author-mark-wrap"><span class="author-mark">✝</span><strong>Template Author</strong></span>
+                        <br>
+                        <div class="spacer"></div>
+                        <span class="badge">Website</span>
+                        <span class="badge">Paper</span>
+                        <span class="badge">Code</span>
+                        <br>
+                        <span class="venue"><strong><em>ECCV 2024</em></strong></span><br>
+                        The final hidden row gives the toggle enough content to demonstrate the expanded state.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>Research Projects</heading>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="section-table papers-table">
+                  <tbody>
+                    <tr class="paper-row">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Project preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>Quantifying the Gap between Understanding and Generation within Unified Multimodal Models</papertitle>
+                        <br>
+                        <div class="spacer"></div>
+                        <a class="badge" href="https://arxiv.org/pdf/2602.02140" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="badge" href="bib/quantifying-gap-unified-multimodal-models.bib" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                        <br>
+                        GapEval is a framework evaluating inference consistency in multimodal models. Results show misalignment between
+                        understanding and generation, exposing limits of "unified" architectures and calling for deeper cognitive convergence.
+                      </td>
+                    </tr>
+                    <tr class="paper-row">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Project preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>PAPER2WEB: LET'S MAKE YOUR PAPER ALIVE!</papertitle>
+                        <br>
+                        <div class="spacer"></div>
+                        <a class="badge" href="https://francischen3.github.io/P2W_Website/" target="_blank" rel="noopener noreferrer">Website</a>
+                        <a class="badge" href="https://arxiv.org/pdf/2510.15842" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="badge" href="https://github.com/YuhangChen1/Paper2All" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a class="badge" href="bib/paper2web.bib" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                        <br>
+                        Paper2Web is the first benchmark for assessing academic webpage generation, and PWAgent, an autonomous system
+                        designed to bridge the gap between static PDFs and interactive project sites.
+                      </td>
+                    </tr>
+                    <tr class="paper-row">
+                      <td class="paper-media-cell">
+                        <img class="paper-media" data-placeholder-media alt="Project preview">
+                      </td>
+                      <td class="paper-copy-cell">
+                        <papertitle>JUDGE ANYTHING: MLLM AS A JUDGE ACROSS ANY MODALITY</papertitle>
+                        <br>
+                        <div class="spacer"></div>
+                        <a class="badge" href="https://urrealhero.github.io/judgeanythingweb/" target="_blank" rel="noopener noreferrer">Website</a>
+                        <a class="badge" href="https://arxiv.org/pdf/2503.17489" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        <a class="badge" href="https://github.com/URRealHero/JudgeAnything" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a class="badge" href="https://huggingface.co/datasets/pudashi/JudgeAnything" target="_blank" rel="noopener noreferrer">Data</a>
+                        <a class="badge" href="bib/judge.bib" target="_blank" rel="noopener noreferrer">BibTeX</a>
+                        <br>
+                        We extend MLLM-as-a-Judge across multiple modalities, present TaskAnything and JudgeAnything benchmarks that reveal
+                        MLLM-as-a-Judge excel at judging MMU but struggle with MMG tasks.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>Research Experience</heading>
+                        <button
+                          id="toggleResearchButton"
+                          class="toggle-btn"
+                          type="button"
+                          data-toggle-target=".extra-research"
+                          data-toggle-display="table"
+                        >
+                          Show all
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="experience-table">
+                  <tbody>
+                    <tr>
+                      <td class="logo-cell">
+                        <img class="org-logo" data-placeholder-media alt="Organization logo">
+                      </td>
+                      <td class="experience-copy-cell">
+                        <a href="#">ONE Lab, HUST</a>
+                        <br>
+                        <span class="experience-time"><em>Nov. 2024 - Present</em></span>
+                        <br>
+                        Multimodal Foudation Models and Multimodal Agents.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="experience-table">
+                  <tbody>
+                    <tr>
+                      <td class="logo-cell">
+                        <img class="org-logo" data-placeholder-media alt="Organization logo">
+                      </td>
+                      <td class="experience-copy-cell">
+      <a href="#">University of Maryland</a>
+      <br>
+      <span class="experience-time"><em>Nov. 2025 - Jan. 2026</em></span>
+      <br>
+      Unidfied Model and World Model
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>Education Experience</heading>
+                        <button
+                          id="toggleEduButton"
+                          class="toggle-btn"
+                          type="button"
+                          data-toggle-target=".extra-edu"
+                          data-toggle-display="table"
+                        >
+                          Show all
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="experience-table">
+                  <tbody>
+                    <tr>
+                      <td class="logo-cell">
+                        <img class="org-logo" data-placeholder-media alt="School logo">
+                      </td>
+                      <td class="experience-copy-cell">
+                        <a href="#">Huazhong University of Science and Technology</a>
+                        <br>
+                        B.S. in Computer Science, 2023-2027(expected.)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="experience-table extra-edu">
+                  <tbody>
+                    <tr>
+                      <td class="logo-cell">
+                        <img class="org-logo" data-placeholder-media alt="School logo">
+                      </td>
+                      <td class="experience-copy-cell">
+                        <a href="#">Remote Intern</a>
+                        <br>
+                        Research intern, 2025.11 - 2026.1
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                
+
+                <hr>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>Honors and Awards</heading>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <b>Outstanding Academic Performance Scholarship</b>, 2023.9.<br>
+                        <b>Outstanding Academic Performance Scholarship</b>, <b>Technology Innovation Scholarship</b>, 2024.9.<br>
+                        <b>Second Prize in the Hubei Province Artificial Intelligence Practical Competition</b>, 2025.5.<br>
+                        <b>Third Prize in Computer System Development Capability Competition</b>, 2025.9.<br>
+                        <b>Second Prize in RuiKang Robot Developer Competition</b>, 2025.9.<br>
+                        <b>Outstanding Academic Performance Scholarship</b>, <b>Technology Innovation Scholarship</b>, 2025.10.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              <hr>
+                <div class="japan-gallery">
+                  <p class="japan-gallery__copy">
+                    Here are photos I took while traveling in Japan. I love traveling in Japan—the people, the scenery, and the food.
+                    I hope to study there someday and eventually settle down in this wonderful and fascinating country.
+                  </p>
+                  <div class="japan-gallery__frame">
+                    <img
+                      id="japan-gallery-image"
+                      class="japan-gallery__image"
+                      src="img/japan/1.jpg"
+                      alt="Travel photo taken in Japan"
+                    >
+                  </div>
+                  <div class="japan-gallery__controls">
+                    <button
+                      id="japan-gallery-prev"
+                      class="japan-gallery__button"
+                      type="button"
+                      aria-label="Previous photo"
+                    >
+                      ‹
+                    </button>
+                    <button
+                      id="japan-gallery-next"
+                      class="japan-gallery__button"
+                      type="button"
+                      aria-label="Next photo"
+                    >
+                      ›
+                    </button>
+                  </div>
+                </div>
+
+                <hr>
+<!-- 
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>Academic Services</heading>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <b>Conference Reviewer:</b> CVPR, ICLR, NeurIPS, ECCV, ICCV, AAAI, ACM MM, 3DV, ICRA, and related workshops.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr> -->
+
+                <!-- <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <br>
+                        <heading>Talks</heading>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="section-table">
+                  <tbody>
+                    <tr>
+                      <td class="news-list">
+                        <b>(03/03/2026)</b> <b>Designing World Models for Real-World Systems</b> @ Template Seminar. [<a href="#">Recording</a>/<a href="#">Slides</a>]<br>
+                        <b>(11/12/2025)</b> <b>Efficient Video Diffusion in Practice</b> @ Example Lab. [<a href="#">Recording</a>/<a href="#">Slides</a>]<br>
+                        <b>(10/17/2025)</b> <b>Learning the Physical World from Videos</b> @ Vision Colloquium. [<a href="#">Recording</a>/<a href="#">Slides</a>]<br>
+                        <b>(10/15/2025)</b> <b>Reasoning for Spatial Intelligence</b> @ Industry Research Meetup. [<a href="#">Recording</a>/<a href="#">Slides</a>]<br>
+                        <b>(10/09/2025)</b> <b>RL for 3D and Embodied Understanding</b> @ Reading Group. [<a href="#">Recording</a>/<a href="#">Slides</a>]<br>
+                        <b>(09/19/2025)</b> <b>Grounding Foundation Models in the World</b> @ Department Talk. [<a href="#">Recording</a>/<a href="#">Slides</a>]<br>
+                        <b>(07/22/2024)</b> <b>Long-Sequence Motion Generation</b> @ Research Studio. [<a href="#">Slides</a>]
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> -->
+
+    <script>
+      window.PAGE_MEDIA = {
+        hero_designer: "img/myself_color1.png",
+        hero_coder: "img/myself_color.jpg",
+        profile_photo: "img/myself_bw.jpg",
+
+        default_section_image: "img/myself_color.jpg",
+        default_logo_image: "img/myself_color.jpg",
+
+        publication_media: [
+          "img/GapEval.png", // AtlasWorld
+          "img/p2w.png", // StereoField
+          "img/judge.png", // FlashFrame
+          // "myself_color.jpg", // RobustMark
+          // "myself_color.jpg", // SceneVQA-3D
+          // "myself_color.jpg", // Motion-R1
+          // "myself_color.jpg", // LongVideo
+          // "myself_color.jpg", // NavReason
+          // "myself_color.jpg", // Compression Priors
+          // "myself_color.jpg"  // Temporal State Spaces
+        ],
+
+        project_media: [
+          "img/GapEval.png", // AtlasWorld         "img/GapEval.png", // AtlasWorld
+          "img/p2w.png", // StereoField
+          "img/judge.png", // FlashFrame
+
+        ],
+
+        research_logos: [
+          "img/hust.png", // Research Lab Alpha
+          "img/umd.png", // Applied Vision Group
+          // "myself_color.jpg", // Interactive Systems Studio
+          // "myself_color.jpg", // Generative Media Lab
+          // "myself_color.jpg", // Robotics Perception Team
+          // "myself_color.jpg", // AI Health Collective
+          // "myself_color.jpg", // Large-Scale Systems Group
+          // "myself_color.jpg", // World Model Initiative
+          // "myself_color.jpg", // Academic Collaboration Network
+          // "myself_color.jpg"  // Embodied Intelligence Lab
+        ],
+
+        education_logos: [
+          "img/hust.png",
+          "img/umd.png", 
+        ],
+
+        japan_gallery: Array.from({ length: 67 }, (_, index) => `img/japan/${index + 1}.jpg`)
+      };
+
+      window.PLACEHOLDER_MEDIA = window.PAGE_MEDIA.hero_designer;
+    </script>
+    <div id="image-lightbox" class="image-lightbox" aria-hidden="true">
+      <button
+        type="button"
+        class="image-lightbox__backdrop"
+        aria-label="Close enlarged image"
+      ></button>
+      <div
+        class="image-lightbox__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Enlarged paper image"
+      >
+        <button
+          type="button"
+          class="image-lightbox__close"
+          aria-label="Close enlarged image"
+        >
+          ×
+        </button>
+        <img
+          id="image-lightbox-img"
+          class="image-lightbox__image"
+          alt="Enlarged paper preview"
+        >
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      id="mapmyvisitors"
+      src="//mapmyvisitors.com/map.js?d=eiJX8PFuQULs8r4EZc-xEzuK11HpypFluiNvg3f5ObA&cl=ffffff&w=a"
+    ></script>
+    <script src="fluid-background.js"></script>
+    <script src="teaser.js"></script>
+  </body>
+</html>

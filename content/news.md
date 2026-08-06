@@ -1,0 +1,7 @@
+- 2026.04 | Paper2Web was accepted to ACL 2026.
+- 2026.02 | GapEval was accepted to CVPR 2026 Findings.
+- 2026.01 | GapEval was released as a preprint.
+- 2025.10 | Paper2Web was released as a preprint.
+- 2025.03 | Judge Anything was accepted to KDD 2025 as an oral presentation.
+- 2024.11 | Judge Anything was released as a preprint.
+- 2023.09 | Began undergraduate study at HUST.

@@ -1,0 +1,4 @@
+- 2024.11 - Present | ONE Lab, HUST | Research on multimodal foundation models and multimodal agents.
+- 2025.11 - 2026.01 | University of Maryland | Research intern focused on unified models and world models.
+- 2023 - 2027 (expected) | Huazhong University of Science and Technology | B.S. in Computer Science and Technology, Qiming College.
+- Honors | Scholarships and competitions | Outstanding Academic Performance Scholarship (2023, 2024, 2025); Technology Innovation Scholarship (2024, 2025); Second Prize, Hubei Province Artificial Intelligence Practical Competition (2025); Third Prize, Computer System Development Capability Competition (2025); Second Prize, RuiKang Robot Developer Competition (2025).

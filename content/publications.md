@@ -24,3 +24,19 @@ note: Extends MLLM-as-a-Judge across modalities with TaskAnything and JudgeAnyth
 image: /publications/judge.png
 imageFit: contain
 links: Website|https://urrealhero.github.io/judgeanythingweb/, arXiv|https://arxiv.org/pdf/2503.17489, Code|https://github.com/URRealHero/JudgeAnything, Data|https://huggingface.co/datasets/pudashi/JudgeAnything, BibTeX|/bib/judge.bib
+
+## DIVE: Benchmarking Full-Duplex Interaction with Visual Engagement in Continuous Streams
+
+meta: In submission
+authors: Yuhang Chen*, Guangyue Liu*, Shilong Liu†
+note: A benchmark for real-time full-duplex multimodal interaction, with 525 audio-visual samples across six tasks covering proactive intervention, continuous engagement, and interaction coordination.
+image: /publications/dive.jpg
+imageFit: contain
+links: PDF|/papers/dive.pdf
+
+## MOSAIC: Multi-Policy Sampling and Collaborative Test-Time Adaptation for Vision-Language-Action Models
+
+meta: In submission
+authors: Yuhang Chen*, Guangyue Liu, Yinchen Tian, Jialin Liu
+note: Collaborative test-time adaptation for VLA policies, improving 103 of 104 cross-policy evaluations across four robotic manipulation benchmarks.
+imageLabel: MOSAIC

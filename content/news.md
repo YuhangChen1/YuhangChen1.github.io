@@ -1,3 +1,4 @@
+- 2026.06 | Started research internships at Columbia University with Prof. Shilong Liu and at InSpatio, focusing on world models and embodied AI.
 - 2026.04 | Paper2Web was accepted to ACL 2026.
 - 2026.02 | GapEval was accepted to CVPR 2026 Findings.
 - 2026.01 | GapEval was released as a preprint.

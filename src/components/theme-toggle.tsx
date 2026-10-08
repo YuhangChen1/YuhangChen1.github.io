@@ -1,45 +1,52 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+import { Moon, Sun } from "lucide-react";
 
 type Theme = "light" | "dark";
 
-export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window === "undefined") {
-      return "dark";
+function getTheme(): Theme {
+  return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+}
+
+function subscribe(onChange: () => void) {
+  const onStorage = (event: StorageEvent) => {
+    if (event.key === "theme" || event.key === null) {
+      document.documentElement.dataset.theme = event.newValue === "dark" ? "dark" : "light";
+      onChange();
     }
+  };
+  window.addEventListener("themechange", onChange);
+  window.addEventListener("storage", onStorage);
+  return () => {
+    window.removeEventListener("themechange", onChange);
+    window.removeEventListener("storage", onStorage);
+  };
+}
 
-    const saved = window.localStorage.getItem("theme") as Theme | null;
-    return saved ?? "light";
-  });
-
-  useEffect(() => {
-    document.documentElement.dataset.theme = theme;
-  }, [theme]);
-
+export function ThemeToggle() {
+  const theme = useSyncExternalStore(subscribe, getTheme, () => "light");
   const toggleTheme = () => {
     const nextTheme = theme === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = nextTheme;
-    window.localStorage.setItem("theme", nextTheme);
-    setTheme(nextTheme);
+    try {
+      window.localStorage.setItem("theme", nextTheme);
+    } catch {
+      // The toggle still works when browser storage is unavailable.
+    }
+    window.dispatchEvent(new Event("themechange"));
   };
 
   return (
     <button
       type="button"
-      className={`theme-toggle ${theme === "light" ? "is-light" : "is-dark"}`}
+      className="theme-toggle"
       onClick={toggleTheme}
-      aria-label="Toggle color theme"
+      aria-label="Dark mode"
+      aria-pressed={theme === "dark"}
+      title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
-      <span className="theme-track" aria-hidden="true">
-        <span className="theme-cloud theme-cloud-a" />
-        <span className="theme-cloud theme-cloud-b" />
-        <span className="theme-stars" />
-      </span>
-      <span className="theme-thumb" aria-hidden="true">
-        <span className="theme-thumb-core" />
-      </span>
+      {theme === "dark" ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
     </button>
   );
 }

@@ -116,17 +116,17 @@ function parsePublications(markdown: string): Publication[] {
     });
 }
 
-const profileFields = parseFields(homeMarkdown.split("## Preface")[0]);
+const profileFields = parseFields(homeMarkdown.split(/^## /m)[0]);
 export const navigation = [
   { label: "About", href: "#about" },
   { label: "News", href: "#news" },
   { label: "Publications", href: "#publications" },
-  { label: "Japan", href: "#japan" },
   { label: "Experience", href: "#experience" },
+  { label: "Japan", href: "#japan" },
 ];
 
 export const profile = {
-  name: homeMarkdown.match(/^# (.+)$/m)?.[1] ?? "Jiaming Wang",
+  name: homeMarkdown.match(/^# (.+)$/m)?.[1] ?? "Yuhang Chen",
   affiliation: profileFields.affiliation ?? "",
   role: profileFields.role ?? "",
   line: profileFields.line ?? "",
@@ -141,6 +141,8 @@ export const profileLinks: LinkItem[] = parsePipeList(getSection(homeMarkdown, "
 }));
 
 export const intro = getSection(homeMarkdown, "About");
+
+export const phdOpportunities = getSection(homeMarkdown, "PhD Opportunities");
 
 export const interests = parseSimpleList(getSection(homeMarkdown, "Research Interests"));
 

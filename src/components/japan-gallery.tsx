@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useRef, useState } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const photos = Array.from({ length: 67 }, (_, index) => `/japan/${index + 1}.jpg`);
 
@@ -27,8 +28,10 @@ export function JapanGallery() {
         tabIndex={0}
         aria-label="Japan travel photo gallery"
         onKeyDown={(event) => {
-          if (event.key === "ArrowLeft") move(-1);
-          if (event.key === "ArrowRight") move(1);
+          if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+            event.preventDefault();
+            move(event.key === "ArrowLeft" ? -1 : 1);
+          }
         }}
         onTouchStart={(event) => {
           startX.current = event.changedTouches[0]?.clientX ?? null;
@@ -50,16 +53,15 @@ export function JapanGallery() {
             fill
             sizes="(max-width: 720px) 100vw, 760px"
             className="japan-gallery-image"
-            priority={index === 0}
           />
         </div>
         <div className="japan-gallery-controls">
-          <button type="button" className="gallery-button" onClick={() => move(-1)} aria-label="Previous photo">
-            <span aria-hidden="true">&#8592;</span>
+          <button type="button" className="gallery-button" onClick={() => move(-1)} aria-label="Previous photo" title="Previous photo">
+            <ArrowLeft size={18} aria-hidden="true" />
           </button>
           <p className="gallery-count" aria-live="polite">{String(index + 1).padStart(2, "0")} / {photos.length}</p>
-          <button type="button" className="gallery-button" onClick={() => move(1)} aria-label="Next photo">
-            <span aria-hidden="true">&#8594;</span>
+          <button type="button" className="gallery-button" onClick={() => move(1)} aria-label="Next photo" title="Next photo">
+            <ArrowRight size={18} aria-hidden="true" />
           </button>
         </div>
       </div>

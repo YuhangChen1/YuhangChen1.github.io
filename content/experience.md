@@ -1,4 +1,6 @@
-- 2024.11 - Present | ONE Lab, HUST | Research on multimodal foundation models and multimodal agents.
-- 2025.11 - 2026.01 | University of Maryland | Research intern focused on unified models and world models.
-- 2023 - 2027 (expected) | Huazhong University of Science and Technology | B.S. in Computer Science and Technology, Qiming College.
-- Honors | Scholarships and competitions | Outstanding Academic Performance Scholarship (2023, 2024, 2025); Technology Innovation Scholarship (2024, 2025); Second Prize, Hubei Province Artificial Intelligence Practical Competition (2025); Third Prize, Computer System Development Capability Competition (2025); Second Prize, RuiKang Robot Developer Competition (2025).
+- 2026.06 - Present | Columbia University | Research intern with Prof. Shilong Liu. Interactive world models for perception, spatial reasoning, planning, and embodied interaction.
+- 2026.06 - Present | InSpatio | Research intern in world models and embodied intelligence. Contributed to InSpatio-World 1.5 through training-data preprocessing and model training; research on world action models.
+- 2025.09 - 2026.01 | University of Maryland | Research intern with Prof. Tianyi Zhou. Token-efficient reasoning, user-centric AI, and the gap between understanding and generation in unified multimodal models.
+- 2024.10 - 2026.02 | ONE Lab, HUST | Research intern with Prof. Yao Wan. Academic webpage generation, multimodal consistency evaluation, and multimodal agents.
+- 2023.09 - 2027.06 | Huazhong University of Science and Technology | B.E. in Computer Science and Technology (expected June 2027). GPA: 4.42/5; rank: 18/313 (top 5.7%).
+- Honors | Scholarships and competitions | Outstanding Academic Performance Scholarship (2023, 2024, 2025); Technology Innovation Scholarship (2024, 2025); First Prize, National Finals of the Global Campus Artificial Intelligence Algorithm Elite Competition (2025); Third Prize, Computer System Development Capability Competition (2025); Second Prize, RuiKang Robot Developer Competition (2025).

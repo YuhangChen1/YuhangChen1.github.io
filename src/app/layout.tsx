@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `try{document.documentElement.dataset.theme=localStorage.getItem("theme")==="dark"?"dark":"light"}catch{}` }} />
+        <script dangerouslySetInnerHTML={{ __html: `try{document.documentElement.dataset.theme=localStorage.getItem("theme")==="dark"?"dark":"light"}catch{}try{var l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("lang");document.documentElement.dataset.lang=l==="zh"?"zh":"en"}catch{}` }} />
       </head>
       <body>{children}</body>
     </html>

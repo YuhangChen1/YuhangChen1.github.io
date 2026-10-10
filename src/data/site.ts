@@ -123,6 +123,7 @@ export const navigation = [
   { label: "Publications", href: "#publications" },
   { label: "Experience", href: "#experience" },
   { label: "Japan", href: "#japan" },
+  { label: "Blog", href: "/blog/" },
 ];
 
 export const profile = {

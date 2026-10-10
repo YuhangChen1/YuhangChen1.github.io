@@ -10,14 +10,13 @@ import {
   Mail,
 } from "lucide-react";
 
-import { ThemeToggle } from "@/components/theme-toggle";
 import { JapanGallery } from "@/components/japan-gallery";
+import { SiteHeader } from "@/components/site-header";
 import {
   experience,
   getPublications,
   intro,
   interests,
-  navigation,
   news,
   phdOpportunities,
   profile,
@@ -78,20 +77,7 @@ export default function Home() {
   return (
     <div className="site-page">
       <a href="#main-content" className="skip-link">Skip to content</a>
-      <header className="topbar">
-        <div className="topbar-inner">
-          <a href="#about" className="topbar-brand">
-            <span className="topbar-name">{profile.name}</span>
-            <span className="topbar-role">Research</span>
-          </a>
-          <nav className="topbar-nav" aria-label="Main navigation">
-            {navigation.map((item) => (
-              <a key={item.href} href={item.href} className="topbar-link">{item.label}</a>
-            ))}
-          </nav>
-          <ThemeToggle />
-        </div>
-      </header>
+      <SiteHeader onHome />
 
       <main id="main-content" className="site-shell">
         <div className="academic-layout">

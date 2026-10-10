@@ -33,6 +33,27 @@ npm run dev -- --hostname 0.0.0.0
 准备好有效的 PDF 后，将它放到 `public/papers/mosaic.pdf`，并在对应的
 Markdown 条目里加上 `links: PDF|/papers/mosaic.pdf` 即可。
 
+## 博客
+
+博客位于 `/blog/`，每篇文章都同时包含英文和中文。读者可以用页面上的
+EN / 中文 按钮切换语言，也可以直接访问 `?lang=zh`。选择会保存在浏览器里。
+
+新增一篇文章：
+
+1. 在 `src/data/blog.ts` 的 `blogPosts` 最前面添加元数据，包括 slug、日期、
+   中英文标题和摘要、标签与阅读时间。
+2. 新建 `src/posts/<slug>.tsx` 写正文，并在 `src/posts/index.ts` 中注册。
+3. 文中图片放到 `public/blog/<slug>/`，引用路径写成 `/blog/<slug>/xxx.png`。
+   图片宽度建议压缩到 1800px 以内。
+
+正文中，行内双语文字用 `<T en="..." zh="..." />`，整块双语内容用
+`<Bi en={...} zh={...} />`，二者都定义在 `src/components/bilingual.tsx`。
+可以参考 `src/posts/vla-aspace.tsx` 的写法。
+
+`next.config.ts` 开启了 `trailingSlash: true`，页面会导出为
+`out/blog/index.html`、`out/blog/<slug>/index.html`，站内链接也写成
+`/blog/` 这种带斜杠的形式。
+
 ## 发布到 GitHub Pages
 
 首次使用这套发布流程时，在 GitHub 仓库的 **Settings > Pages > Build and
@@ -41,7 +62,7 @@ deployment > Source** 中选择 **GitHub Actions**。
 ```sh
 npm run lint
 npm run build
-git add content src public scripts .github README.md package.json package-lock.json next-env.d.ts .gitignore
+git add content src public scripts .github README.md next.config.ts package.json package-lock.json next-env.d.ts .gitignore
 git commit -m "Update academic homepage"
 git push origin master
 ```
